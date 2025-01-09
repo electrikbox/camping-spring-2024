@@ -29,12 +29,12 @@ public class ClientController {
         clientService.deleteClient(id);
     }
 
-    @PostMapping()
-    public Client saveClient(@RequestBody Client Client) {
-        return clientService.saveClient(Client);
+    @PostMapping
+    public Client saveClient(@RequestBody Client client) {
+        return clientService.saveClient(client);
     }
 
-    @PatchMapping()
+    @PatchMapping
     public Client updateClient(@RequestBody Client Client) {
         return clientService.saveClient(Client);
     }
